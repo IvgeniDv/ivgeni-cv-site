@@ -8,45 +8,49 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto",  sans-serif }
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Montserrat:wght@100&family=Quicksand:wght@300&display=swap');
+
+html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Jost', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Quicksand', sans-serif;}
 a:link {text-decoration: none;}
 body {
   background-color: #141f1f;
 }
 .background-image-Myinfo{
-  background-image: linear-gradient(#102a43f2, #007d82bf) , url("pictures/2.jfif");
+  background-image: linear-gradient(#102a43f2, #000000) , url("pictures/2.jfif");
   background-color: #cccccc;
   height: 100%;
   background-repeat: no-repeat;
   background-size: 150%;
-
+  box-shadow: 3px 5px 10px black;
 }
 
 .background-image-Education{
-  background-image: linear-gradient(#102a43f2, #007d82bf), url("pictures/12.jpg");
+  background-image: linear-gradient(#102a43f2, #000000), url("pictures/12.jpg");
   background-color: #cccccc;
   height: 100%;
   background-repeat: no-repeat;
   background-size: 100%;
-
+  box-shadow: 3px 5px 10px black;
 }
 
 .background-image-Work-Experience{
-  background-image: linear-gradient(#102a43f2, #007d82bf), url("pictures/4.png");
+  background-image: linear-gradient(#102a43f2, #000000), url("pictures/4.png");
   background-color: #cccccc;
   height: 100%;
   background-repeat: no-repeat;
   background-size: 200%;
-
+  box-shadow: 3px 5px 10px black;
 }
 
 .background-image-Skills{
-  background-image: linear-gradient(#102a43f2, #007d82bf), url("pictures/13.jpg");
+  background-image: linear-gradient(#102a43f2, #000000), url("pictures/13.jpg");
   background-color: #cccccc;
   height: 100%;
   background-repeat: no-repeat;
   background-size: 100%;
-
+  box-shadow: 3px 5px 10px black;
 }
 
 </style>
@@ -61,7 +65,7 @@ body {
     <!-- Left Column -->
     <div class="w3-third">
 
-      <div  class="w3-2021-inkwell background-image-Myinfo"  >
+      <div  class="w3-2021-inkwell background-image-Myinfo "   >
         <div class="w3-display-Topleft w3-container w3-text-white">
           <h2>Ivgeni Dvorkin</h2>
         </div>
@@ -90,7 +94,7 @@ body {
     <div class="w3-twothird">
         
         <div class="w3-2021-inkwell w3-container w3-card  w3-margin-bottom background-image-Education">
-            <h2 class="w3-text-white w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Education</h2>
+            <h2 class="w3-text-white w3-padding-16">Education</h2>  <!-- <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i> icon -->
             <div class="w3-container">
               <h5><b>Open University</b></h5>
               <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2020 - <span class="w3-tag w3-blue w3-round">Current</span></h6>
@@ -106,7 +110,7 @@ body {
 
 
       <div class="w3-container w3-card w3-2021-inkwell w3-margin-bottom background-image-Work-Experience">
-        <h2 class="w3-text-white w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Work Experience</h2>
+        <h2 class="w3-text-white w3-padding-16">Work Experience</h2>  <!-- <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i> icon -->
 
         <div class="w3-container">
           <h5><b>Data systems implementer | Malam Team</b></h5>
@@ -151,7 +155,7 @@ body {
       </div>
 
       <div class="w3-container w3-card w3-2021-inkwell w3-margin-bottom background-image-Skills" >
-        <h2 class="w3-text-white w3-padding-16"><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-blue"></i>Skills</h2>
+        <h2 class="w3-text-white w3-padding-16">Skills</h2> <!-- <i class="fa fa-asterisk fa-fw w3-margin-right w3-text-blue"></i> icon -->
         <div class="w3-container">
           <p><i class="fa fa-dot-circle-o fa-fw w3-margin-right w3-text-blue"></i>Knowledge in java and understanding of object-oriented programming.</p>
           <p><i class="fa fa-dot-circle-o fa-fw w3-margin-right w3-text-blue"></i>Familiar with C programming language.</p>
