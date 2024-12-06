@@ -23,7 +23,9 @@ hr{
    background-color: #6EBF8B;
    border: none;
 }
-
+    a:hover {
+        color: blue; /* Optional: Change color on hover */
+    }
 div {
   color:#151D3B;
 }
@@ -68,6 +70,23 @@ body {
   box-shadow: 3px 5px 10px black;
 }
 
+
+    /* Style for the image */
+    .circle-image {
+        width: 222px; /* Adjust the size as needed */
+        height: 222px; /* Maintain equal width and height for a perfect circle */
+        border-radius: 50%; /* Makes the shape circular */
+        overflow: hidden; /* Ensures the image stays within the circle */
+        display: inline-block; /* Optional: to align the circle properly */
+    }
+
+        .circle-image img {
+            width: 100%; /* Ensures the image fits the circle */
+            height: 100%; /* Ensures the image fills the circle */
+            object-fit: cover; /* Ensures the image scales nicely */
+        }
+
+
 </style>
 <body >
 
@@ -80,30 +99,44 @@ body {
     <!-- Left Column -->
     <div class="w3-third">
 
-      <div  class=" background-image-Myinfo "   >
-        <div class="w3-display-Topleft w3-container ">
-          <h2 style="color:#151D3B; ">Ivgeni Dvorkin</h2>
-        </div>
-        <div class="w3-display-container">
-         <!-- <img src="pictures/11.jpg" style="width:100%" alt="Avatar"> -->
+        <div class=" background-image-Myinfo ">
+            
+            </div>
 
-        </div>
-        <div style="" class="w3-container">
-          <p style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-phone fa-fw w3-margin-right w3-large"></i><a href="https://wa.me/+972522605044">+972 52-260-5044</a></p>
-          <p style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-envelope fa-fw w3-margin-right w3-large"></i><a href="mailto:Ivgenidv@gmail.com">ivgenidv@gmail.com</a></p>
-          <p style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-linkedin fa-fw w3-margin-right w3-large"></i><a href="https://www.linkedin.com/in/ivgeni-dvorkin-36b7b718a/">LinkedIn</a></p>
-          <p style="color:#151D3B;"><i  style="color:#6EBF8B;"class="fa fa-github fa-fw w3-margin-right w3-large"></i><a href="https://www.github.com/IvgeniDv">Github</a></p>
-          <p style="color:#151D3B;"><i  style="color:#6EBF8B;" class="fa fa-file-pdf-o fa-fw w3-margin-right w3-large"></i><a href="CVEn.pdf" download>English version</a></p>
-          <p style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-file-pdf-o fa-fw w3-margin-right w3-large"></i><a href="CVHeb.pdf" download>Hebrew version</a></p>
-          <hr  >
-        
-          <p style="color:#151D3B;" class="w3-large">Hi,<br>I’m a student at the Open University, studying B.Sc in computer science. <br>
-            Currently working full-time at Malam Team as a Data Systems Implementer at the Barzilai Medical Center.</p>
-        </div>
-      </div><br>
+        <div class=" background-image-Myinfo " >
 
-    <!-- End Left Column -->
-    </div>
+            <div class="w3-display-Topleft w3-container " style="margin-bottom:5PX; padding:5PX">
+                <div class="circle-image ">
+                    <img src="me.jpg" alt="Circle Image">
+                </div>
+            </div>
+
+            <div class="w3-display-Topleft w3-container ">
+                <h2 style="color:#151D3B; ">Ivgeni Dvorkin</h2>
+            </div>
+            <div class="w3-display-container">
+                <!-- <img src="pictures/11.jpg" style="width:100%" alt="Avatar"> -->
+
+            </div>
+            <div style="" class="w3-container">
+                <p style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-phone fa-fw w3-margin-right w3-large"></i><a href="https://wa.me/+972522605044">+972 52-260-5044</a></p>
+                <p style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-envelope fa-fw w3-margin-right w3-large"></i><a href="mailto:Ivgenidv@gmail.com">ivgenidv@gmail.com</a></p>
+                <p style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-linkedin fa-fw w3-margin-right w3-large"></i><a href="https://www.linkedin.com/in/ivgeni-dvorkin-36b7b718a/">LinkedIn</a></p>
+                <p style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-github fa-fw w3-margin-right w3-large"></i><a href="https://www.github.com/IvgeniDv">Github</a></p>
+                <!--<p style="color:#151D3B;"><i  style="color:#6EBF8B;" class="fa fa-file-pdf-o fa-fw w3-margin-right w3-large"></i><a href="CVEn.pdf" download>English version</a></p>
+        <p style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-file-pdf-o fa-fw w3-margin-right w3-large"></i><a href="CVHeb.pdf" download>Hebrew version</a></p>  -->
+                <hr>
+
+                <p style="color:#151D3B;" class="w3-large">
+                    Hi,<br>I’m a SQL Server DBA at <a href="https://www.ryltech.co.il/he/" style=" color:lightslategray">Ryltech</a> - <a style=" color:lightslategray" href="https://www.aimbetter.com/">Aimbetter</a> and a
+                    student at the Open University, studying computer science (B.Sc).<br>
+
+                </p>
+            </div>
+        </div><br>
+
+            <!-- End Left Column -->
+        </div>
 
     <!-- Right Column -->
     <div class="w3-twothird">
@@ -124,74 +157,95 @@ body {
           </div>
 
 
-      <div class="w3-container w3-card w3-2021-inkwell w3-margin-bottom background-image-Work-Experience">
-        <h2 style="color:#151D3B;" class=" w3-padding-16">Work Experience</h2>  <!-- <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i> icon -->
+        <div class="w3-container w3-card w3-2021-inkwell w3-margin-bottom background-image-Work-Experience">
+            <h2 style="color:#151D3B;" class=" w3-padding-16">Work Experience</h2>  <!-- <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i> icon -->
 
-        <div class="w3-container">
-          <h5><b>Data systems implementer | Malam Team</b></h5>
-          <h6 style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2021 - <span class="w3-tag w3-green w3-round">Current</span></h6>
-          <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Researching and troubleshooting the data systems.</p>
-          <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Researching the database, writing queries.</p>
-          <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Characterization and support for bi report development.</p>
-          <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right"></i>Tailoring the system to the user's needs.</p>
-          <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>User guidance.  Supplier and client support.</p>
-          <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Writing technical manuals for different user groups.</p>
-          <br>
-          <hr>
+            <div class="w3-container">
+                <h5><b>Microsoft SQLServer DBA | Ryltech - Aimbetter</b></h5>
+                <h6 style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2023 - <span class="w3-tag w3-green w3-round">Current</span></h6>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Monitoring database performance using tools and logs.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Optimizing queries, indexes, and database structures for better efficiency.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Developing and executing backup plans to ensure data recovery in case of failure.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right"></i>Diagnosing and resolving database-related errors.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Developing scripts to automate tasks.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Working with developers to review and optimize SQL queries.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Preparing documentation and reports for audits.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Collaborating with network and system administrators to ensure database availability.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Training team members on database tools and best practices.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Creating High Availability and Disaster Recovery solutions such as: Log-shipping, Mirroring , Replication, Backup and Restore Strategy, Point-in-Time Recovery, Database Snapshots. </p>
+
+
+                <br>
+                <hr>
+            </div>
+
+
+
+            <div class="w3-container">
+                <h5><b>Data systems implementer | Malam Team</b></h5>
+                <h6 style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2021 - Oct 2023</h6>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Researching and troubleshooting the data systems.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Researching the database, writing queries.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Characterization and support for bi report development.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right"></i>Tailoring the system to the user's needs.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>User guidance.  Supplier and client support.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Writing technical manuals for different user groups.</p>
+                <br>
+                <hr>
+            </div>
+
+            <div class="w3-container">
+                <h5><b>Data systems integrator | John Bryce</b></h5>
+                <h6 style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2021 - Nov 2021</h6>
+                <br>
+
+                <h6><b>Ministry of Health - The Chameleon Electronic Medical Record project</b></h6>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Lead instructor.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Guiding new team members. </p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Software and hardware problem-solving.</p>
+                <br>
+
+                <h6><b>Osem – Nestle project</b></h6>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Characterization of the implementation process.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Optimization of the implementation process.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Implementation of systems in a production environment.</p>
+
+                <hr>
+            </div>
+
+            <div class="w3-container">
+                <h5><b>Foreman of Automotive Department | IDF | Officers training academy</b></h5>
+                <h6 style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2012 - Nov 2018</h6>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Made use of the ERP program (SAP).</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Managing the automotive department (a team of 20 soldiers on average) and stock.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Honorable discharge with the rank of chief sergeant (Rav-Samal).</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Tzuk – Eitan battle decoration and the Operational Service badge.</p>
+                <br>
+            </div>
         </div>
-
-        <div class="w3-container">
-          <h5><b>Data systems integrator | John Bryce</b></h5>
-          <h6 style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2021 - Nov 2021</h6>
-          <br>
-
-          <h6><b>Ministry of Health - The Chameleon Electronic Medical Record project</b></h6>
-          <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Lead instructor.</p>
-          <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Guiding new team members. </p>
-          <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Software and hardware problem-solving.</p>
-          <br>
-
-          <h6><b>Osem – Nestle project</b></h6>
-          <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Characterization of the implementation process.</p>
-          <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Optimization of the implementation process.</p>
-          <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Implementation of systems in a production environment.</p>
-
-          <hr >
-        </div>
-
-        <div class="w3-container">
-          <h5><b>Foreman of Automotive Department | IDF | Officers training academy</b></h5>
-          <h6 style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2012 - Nov 2018</h6>
-          <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Made use of the ERP program (SAP).</p>
-          <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Managing the automotive department (a team of 20 soldiers on average) and stock.</p>
-          <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Honorable discharge with the rank of chief sergeant (Rav-Samal).</p>
-          <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Tzuk – Eitan battle decoration and the Operational Service badge.</p>
-          <br>
-        </div>
-      </div>
 
       <div class="w3-container w3-card w3-2021-inkwell w3-margin-bottom background-image-Skills" >
         <h2 style="color:#151D3B;" class=" w3-padding-16">Skills</h2> <!-- <i class="fa fa-asterisk fa-fw w3-margin-right w3-text-blue"></i> icon -->
         <div class="w3-container">
 
             <div class="w3-container">
-              <h5><b>Familiar with the following  programming languages:</b></h5>
-              <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Java and understanding of OOP.</p>
-              <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>C.</p>
-              <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Python.</p>
-              <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>SQL.</p>
-              <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Html, Css, building landing pages with Wordpress.</p>
-              <br>
-              <h5><b>Familiar with the following  OS:</b></h5>
-              <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Linux.</p>
-              <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right"></i>Windows.</p>
-              <br>
-              <h5><b>Additional information:</b></h5>
-              <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>I am an autodidact. </p>
-              <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>I have a meticulous approach to work.</p>
-              <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right"></i>I can understand and identify work processes.</p>
-              <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right"></i>I have great communications skills, both written and verbal.</p>
-              <br>
+                <h5><b>Familiar with the following  programming languages:</b></h5>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>TSQL.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Java and understanding of OOP.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>C.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Python.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Html, Css, building landing pages with Wordpress.</p>
+                <br>
+                <h5><b>Familiar with the following  OS:</b></h5>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right"></i>Windows.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Linux.</p>
+                <br>
+                <h5><b>Additional information:</b></h5>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>I am an autodidact. </p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>I have a meticulous approach to work.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right"></i>I can esly understand and identify work processes.</p>
+                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right"></i>I have great communications skills, both written and verbal in English, Hebrew And Russian.</p>
+                <br>
             </div>
 
         </div>
