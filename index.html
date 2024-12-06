@@ -4,80 +4,75 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
 
-
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@600&family=Jost:wght@200&family=Lato:ital,wght@0,300;1,100;1,300&family=Montserrat:wght@100&family=Quicksand:wght@300&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@600&family=Jost:wght@200&family=Lato:ital,wght@0,300;1,100;1,300&family=Montserrat:wght@100&family=Quicksand:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@600&family=Jost:wght@200&family=Lato:ital,wght@0,300;1,100;1,300&family=Montserrat:wght@100&family=Quicksand:wght@300&display=swap');
-
-html,body,h1,h2,h3,h4,h5,h6 {
-
-color:#151D3B;}
-a:link {text-decoration: none;}
-hr{
-   height: 1px;
-   background-color: #6EBF8B;
-   border: none;
-}
-    a:hover {
-        color: blue; /* Optional: Change color on hover */
+    html, body {
+        font-family: 'Roboto', sans-serif;
+        color: #2C3E50; /* Dark blue-gray for text */
+        background-color: #ECF0F1; /* Light background */
+        margin: 0;
+        padding: 20px;
     }
-div {
-  color:#151D3B;
-}
 
-body {
-  background-color: #DADBBD;
-}
+    h1, h2, h3 {
+        color: white;
+        margin: 10px 0;
+        font-weight: 600; /* Bold for section headings */
+    }
 
-.background-image-Myinfo{
-  background-image: linear-gradient(#FFFFFF,#FFFFFF); <!-- , url("pictures/2.jfif") -->
-  background-color: #DADBBD;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: 150%;
-  box-shadow: 3px 5px 10px black;
-}
+    a {
+        text-decoration: none;
+        color: #2980B9; /* Link color */
+    }
 
-.background-image-Education{
-  background-image: linear-gradient(#FFFFFF,#FFFFFF); <!-- , url("pictures/12.jpg") -->
-  background-color: #cccccc;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  box-shadow: 3px 5px 10px black;
-}
+        a:hover {
+            color: #3498DB; /* Hover color */
+        }
 
-.background-image-Work-Experience{
-  background-image: linear-gradient(#FFFFFF,#FFFFFF); <!-- , url("pictures/4.png") -->
-  background-color: #cccccc;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: 200%;
-  box-shadow: 3px 5px 10px black;
-}
+    hr {
+        height: 1px;
+        background-color: #BDC3C7; /* Light gray for separator */
+        border: none;
+        margin: 20px 0;
+    }
 
-.background-image-Skills{
-  background-image: linear-gradient(#FFFFFF,#FFFFFF); <!-- , url("pictures/13.jpg") -->
-  background-color: #cccccc;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  box-shadow: 3px 5px 10px black;
-}
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 
+    .profile {
+        flex: 1 1 30%; /* Allow flexibility */
+        background-color: #FFFFFF; /* White background for profile */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-    /* Style for the image */
+    .section {
+        flex: 1 1 30%; /* Allow flexibility */
+        background-color: #F8F9FA; /* Light gray for sections */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style for the circular image */
     .circle-image {
         width: 222px; /* Adjust the size as needed */
         height: 222px; /* Maintain equal width and height for a perfect circle */
         border-radius: 50%; /* Makes the shape circular */
         overflow: hidden; /* Ensures the image stays within the circle */
         display: inline-block; /* Optional: to align the circle properly */
+        border: 3px solid #3498DB; /* Border for the circle image */
     }
 
         .circle-image img {
@@ -86,185 +81,208 @@ body {
             object-fit: cover; /* Ensures the image scales nicely */
         }
 
+    /* Skill badges */
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; /* Space between badges */
+        justify-content: center; /* Center the badges */
+    }
 
+    .skill-badge {
+        background-color: #3498DB; /* Skill badge background color */
+        color: white;
+        padding: 10px 15px;
+        border-radius: 20px; /* Rounded badge */
+        font-size: 14px; /* Font size for badges */
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #2C3E50; /* Dark footer background */
+        color: white;
+        font-size: 14px;
+        margin-top: 20px; /* Space above footer */
+        border-radius: 8px; /* Rounded footer */
+    }
 </style>
-<body >
+<body>
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
+        <!-- The Grid -->
+        <div class="w3-row-padding">
 
-    <!-- Left Column -->
-    <div class="w3-third">
+            <!-- Left Column -->
+            <div class="w3-third">
 
-        <div class=" background-image-Myinfo ">
-            
+
+
+                <div class=" background-image-Myinfo ">
+
+                    <div class="w3-display-Topleft w3-container " style="margin-bottom:5PX; padding:5PX">
+                        <div class="circle-image ">
+                            <img src="me.jpg" alt="Circle Image">
+                        </div>
+                    </div>
+
+                    <div class="w3-display-Topleft w3-container ">
+                        <h2 style="color: #151D3B; ">Ivgeni Dvorkin</h2>
+                    </div>
+                    <div class="w3-display-container">
+                        <!-- <img src="pictures/11.jpg" style="width:100%" alt="Avatar"> -->
+
+                    </div>
+                    <div style="" class="w3-container">
+                        <p style="color: #151D3B; "><i style="color:#6EBF8B;" class="fa fa-phone fa-fw w3-margin-right w3-large"></i><a href="https://wa.me/+972522605044">+972 52-260-5044</a></p>
+                        <p style="color: #151D3B;"><i style="color:#6EBF8B;" class="fa fa-envelope fa-fw w3-margin-right w3-large"></i><a href="mailto:Ivgenidv@gmail.com">ivgenidv@gmail.com</a></p>
+                        <p style="color: #151D3B;"><i style="color:#6EBF8B;" class="fa fa-linkedin fa-fw w3-margin-right w3-large"></i><a href="https://www.linkedin.com/in/ivgeni-dvorkin-36b7b718a/">LinkedIn</a></p>
+                        <p style="color: #151D3B;"><i style="color:#6EBF8B;" class="fa fa-github fa-fw w3-margin-right w3-large"></i><a href="https://www.github.com/IvgeniDv">Github</a></p>
+                        <!--<p style="color:white;"><i  style="color:#6EBF8B;" class="fa fa-file-pdf-o fa-fw w3-margin-right w3-large"></i><a href="CVEn.pdf" download>English version</a></p>
+                        <p style="color:white;"><i style="color:#6EBF8B;" class="fa fa-file-pdf-o fa-fw w3-margin-right w3-large"></i><a href="CVHeb.pdf" download>Hebrew version</a></p>  -->
+                        <hr>
+
+                        <p style="color: #151D3B;" class="w3-large">
+                            Hi,<br>I’m a SQL Server DBA at <a href="https://www.ryltech.co.il/he/" style=" color:lightslategray">Ryltech</a> - <a style=" color:lightslategray" href="https://www.aimbetter.com/">Aimbetter</a> and a
+                            student at the Open University, studying computer science (B.Sc).<br>
+
+                        </p>
+                    </div>
+                </div><br>
+
+                <!-- End Left Column -->
             </div>
 
-        <div class=" background-image-Myinfo " >
+            <!-- Right Column -->
+            <div class="w3-twothird">
 
-            <div class="w3-display-Topleft w3-container " style="margin-bottom:5PX; padding:5PX">
-                <div class="circle-image ">
-                    <img src="me.jpg" alt="Circle Image">
+                <div class="w3-2021-inkwell w3-container w3-card  w3-margin-bottom background-image-Education">
+                    <h2 style="color:white;" class="w3-padding-16">Education</h2>  <!-- <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i> icon -->
+                    <div class="w3-container">
+                        <h5 style="color:white;"><b>Open University</b></h5>
+                        <h6 style="color:white;"><i style="color:#6EBF8B;" class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2020 - <span style="color:white;" class="w3-tag w3-green w3-round">Current</span></h6>
+                        <p style="color:white;">B.Sc. in Computer Science</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 style="color:white;"><b>Etgar college</b></h5>
+                        <h6 style="color:white;"><i style="color:#6EBF8B;" class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2018</h6>
+                        <p style="color:white;">Industrial engineering technician, specializing in HR </p><br>
+                    </div>
                 </div>
+
+
+                <div class="w3-container w3-card w3-2021-inkwell w3-margin-bottom background-image-Work-Experience">
+                    <h2 style="color:white;" class=" w3-padding-16">Work Experience</h2>  <!-- <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i> icon -->
+
+                    <div class="w3-container">
+                        <h5><b>Microsoft SQLServer DBA | Ryltech - Aimbetter</b></h5>
+                        <h6 style="color:white;"><i style="color:#6EBF8B;" class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2023 - <span class="w3-tag w3-green w3-round">Current</span></h6>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Monitoring database performance using tools and logs.</p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Optimizing queries, indexes, and database structures for better efficiency.</p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Developing and executing backup plans to ensure data recovery in case of failure.</p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right"></i>Diagnosing and resolving database-related errors.</p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Developing scripts to automate tasks.</p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Working with developers to review and optimize SQL queries.</p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Preparing documentation and reports for audits.</p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Collaborating with network and system administrators to ensure database availability.</p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Training team members on database tools and best practices.</p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Creating High Availability and Disaster Recovery solutions such as: Log-shipping, Mirroring , Replication, Backup and Restore Strategy, Point-in-Time Recovery, Database Snapshots. </p>
+
+
+                        <br>
+                        <hr>
+                    </div>
+
+
+
+                    <div class="w3-container">
+                        <h5><b>Data systems implementer | Malam Team</b></h5>
+                        <h6 style="color:white;"><i style="color:#6EBF8B;" class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2021 - Oct 2023</h6>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Researching and troubleshooting the data systems.</p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Researching the database, writing queries.</p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Characterization and support for bi report development.</p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right"></i>Tailoring the system to the user's needs.</p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>User guidance.  Supplier and client support.</p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Writing technical manuals for different user groups.</p>
+                        <br>
+                        <hr>
+                    </div>
+
+                    <div class="w3-container">
+                        <h5><b>Data systems integrator | John Bryce</b></h5>
+                        <h6 style="color:white;"><i style="color:#6EBF8B;" class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2021 - Nov 2021</h6>
+                        <br>
+
+                        <h6><b>Ministry of Health - The Chameleon Electronic Medical Record project</b></h6>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Lead instructor.</p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Guiding new team members. </p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Software and hardware problem-solving.</p>
+                        <br>
+
+                        <h6><b>Osem – Nestle project</b></h6>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Characterization of the implementation process.</p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Optimization of the implementation process.</p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Implementation of systems in a production environment.</p>
+
+                        <hr>
+                    </div>
+
+                    <div class="w3-container">
+                        <h5><b>Foreman of Automotive Department | IDF | Officers training academy</b></h5>
+                        <h6 style="color:white;"><i style="color:#6EBF8B;" class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2012 - Nov 2018</h6>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Made use of the ERP program (SAP).</p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Managing the automotive department (a team of 20 soldiers on average) and stock.</p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Honorable discharge with the rank of chief sergeant (Rav-Samal).</p>
+                        <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Tzuk – Eitan battle decoration and the Operational Service badge.</p>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-card w3-2021-inkwell w3-margin-bottom background-image-Skills">
+                    <h2 style="color:white;" class=" w3-padding-16">Skills</h2> <!-- <i class="fa fa-asterisk fa-fw w3-margin-right w3-text-blue"></i> icon -->
+                    <div class="w3-container">
+
+                        <div class="w3-container">
+                            <h5><b>Familiar with the following  programming languages:</b></h5>
+                            <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>TSQL.</p>
+                            <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Java and understanding of OOP.</p>
+                            <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>C.</p>
+                            <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Python.</p>
+                            <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Html, Css, building landing pages with Wordpress.</p>
+                            <br>
+                            <h5><b>Familiar with the following  OS:</b></h5>
+                            <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right"></i>Windows.</p>
+                            <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Linux.</p>
+                            <br>
+                            <h5><b>Additional information:</b></h5>
+                            <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>I am an autodidact. </p>
+                            <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>I have a meticulous approach to work.</p>
+                            <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right"></i>I can esly understand and identify work processes.</p>
+                            <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right"></i>I have great communications skills, both written and verbal in English, Hebrew And Russian.</p>
+                            <br>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- End Right Column -->
             </div>
 
-            <div class="w3-display-Topleft w3-container ">
-                <h2 style="color:#151D3B; ">Ivgeni Dvorkin</h2>
-            </div>
-            <div class="w3-display-container">
-                <!-- <img src="pictures/11.jpg" style="width:100%" alt="Avatar"> -->
-
-            </div>
-            <div style="" class="w3-container">
-                <p style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-phone fa-fw w3-margin-right w3-large"></i><a href="https://wa.me/+972522605044">+972 52-260-5044</a></p>
-                <p style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-envelope fa-fw w3-margin-right w3-large"></i><a href="mailto:Ivgenidv@gmail.com">ivgenidv@gmail.com</a></p>
-                <p style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-linkedin fa-fw w3-margin-right w3-large"></i><a href="https://www.linkedin.com/in/ivgeni-dvorkin-36b7b718a/">LinkedIn</a></p>
-                <p style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-github fa-fw w3-margin-right w3-large"></i><a href="https://www.github.com/IvgeniDv">Github</a></p>
-                <!--<p style="color:#151D3B;"><i  style="color:#6EBF8B;" class="fa fa-file-pdf-o fa-fw w3-margin-right w3-large"></i><a href="CVEn.pdf" download>English version</a></p>
-        <p style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-file-pdf-o fa-fw w3-margin-right w3-large"></i><a href="CVHeb.pdf" download>Hebrew version</a></p>  -->
-                <hr>
-
-                <p style="color:#151D3B;" class="w3-large">
-                    Hi,<br>I’m a SQL Server DBA at <a href="https://www.ryltech.co.il/he/" style=" color:lightslategray">Ryltech</a> - <a style=" color:lightslategray" href="https://www.aimbetter.com/">Aimbetter</a> and a
-                    student at the Open University, studying computer science (B.Sc).<br>
-
-                </p>
-            </div>
-        </div><br>
-
-            <!-- End Left Column -->
+            <!-- End Grid -->
         </div>
 
-    <!-- Right Column -->
-    <div class="w3-twothird">
-        
-        <div class="w3-2021-inkwell w3-container w3-card  w3-margin-bottom background-image-Education">
-            <h2 style="color:#151D3B;" class="w3-padding-16">Education</h2>  <!-- <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i> icon -->
-            <div class="w3-container">
-              <h5 style="color:#151D3B;"><b>Open University</b></h5>
-              <h6 style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2020 - <span style="color:#151D3B;" class="w3-tag w3-green w3-round">Current</span></h6>
-              <p style="color:#151D3B;">B.Sc. in Computer Science</p>
-              <hr >
-            </div>
-            <div class="w3-container">
-              <h5 style="color:#151D3B;"><b>Etgar college</b></h5>
-              <h6 style="color:#151D3B;" ><i style="color:#6EBF8B;"  class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2018</h6>
-              <p style="color:#151D3B;">Industrial engineering technician, specializing in HR </p><br>
-            </div>
-          </div>
-
-
-        <div class="w3-container w3-card w3-2021-inkwell w3-margin-bottom background-image-Work-Experience">
-            <h2 style="color:#151D3B;" class=" w3-padding-16">Work Experience</h2>  <!-- <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i> icon -->
-
-            <div class="w3-container">
-                <h5><b>Microsoft SQLServer DBA | Ryltech - Aimbetter</b></h5>
-                <h6 style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2023 - <span class="w3-tag w3-green w3-round">Current</span></h6>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Monitoring database performance using tools and logs.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Optimizing queries, indexes, and database structures for better efficiency.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Developing and executing backup plans to ensure data recovery in case of failure.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right"></i>Diagnosing and resolving database-related errors.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Developing scripts to automate tasks.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Working with developers to review and optimize SQL queries.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Preparing documentation and reports for audits.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Collaborating with network and system administrators to ensure database availability.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Training team members on database tools and best practices.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Creating High Availability and Disaster Recovery solutions such as: Log-shipping, Mirroring , Replication, Backup and Restore Strategy, Point-in-Time Recovery, Database Snapshots. </p>
-
-
-                <br>
-                <hr>
-            </div>
-
-
-
-            <div class="w3-container">
-                <h5><b>Data systems implementer | Malam Team</b></h5>
-                <h6 style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2021 - Oct 2023</h6>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Researching and troubleshooting the data systems.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Researching the database, writing queries.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Characterization and support for bi report development.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right"></i>Tailoring the system to the user's needs.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>User guidance.  Supplier and client support.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Writing technical manuals for different user groups.</p>
-                <br>
-                <hr>
-            </div>
-
-            <div class="w3-container">
-                <h5><b>Data systems integrator | John Bryce</b></h5>
-                <h6 style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2021 - Nov 2021</h6>
-                <br>
-
-                <h6><b>Ministry of Health - The Chameleon Electronic Medical Record project</b></h6>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Lead instructor.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Guiding new team members. </p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Software and hardware problem-solving.</p>
-                <br>
-
-                <h6><b>Osem – Nestle project</b></h6>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Characterization of the implementation process.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Optimization of the implementation process.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Implementation of systems in a production environment.</p>
-
-                <hr>
-            </div>
-
-            <div class="w3-container">
-                <h5><b>Foreman of Automotive Department | IDF | Officers training academy</b></h5>
-                <h6 style="color:#151D3B;"><i style="color:#6EBF8B;" class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2012 - Nov 2018</h6>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Made use of the ERP program (SAP).</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Managing the automotive department (a team of 20 soldiers on average) and stock.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Honorable discharge with the rank of chief sergeant (Rav-Samal).</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Tzuk – Eitan battle decoration and the Operational Service badge.</p>
-                <br>
-            </div>
-        </div>
-
-      <div class="w3-container w3-card w3-2021-inkwell w3-margin-bottom background-image-Skills" >
-        <h2 style="color:#151D3B;" class=" w3-padding-16">Skills</h2> <!-- <i class="fa fa-asterisk fa-fw w3-margin-right w3-text-blue"></i> icon -->
-        <div class="w3-container">
-
-            <div class="w3-container">
-                <h5><b>Familiar with the following  programming languages:</b></h5>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>TSQL.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Java and understanding of OOP.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>C.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Python.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Html, Css, building landing pages with Wordpress.</p>
-                <br>
-                <h5><b>Familiar with the following  OS:</b></h5>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right"></i>Windows.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>Linux.</p>
-                <br>
-                <h5><b>Additional information:</b></h5>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>I am an autodidact. </p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right "></i>I have a meticulous approach to work.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right"></i>I can esly understand and identify work processes.</p>
-                <p><i style="color:#6EBF8B;" class="fa fa-dot-circle-o fa-fw w3-margin-right"></i>I have great communications skills, both written and verbal in English, Hebrew And Russian.</p>
-                <br>
-            </div>
-
-        </div>
-      </div>
-     
-
-    <!-- End Right Column -->
+        <!-- End Page Container -->
     </div>
-    
-  <!-- End Grid -->
-  </div>
-  
-  <!-- End Page Container -->
-</div>
 
 
 
-<footer>
-</footer>
+    <footer>
+    </footer>
 
 </body>
 </html>
