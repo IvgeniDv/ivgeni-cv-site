@@ -107,8 +107,57 @@
         margin-top: 20px; /* Space above footer */
         border-radius: 8px; /* Rounded footer */
     }
+
+
+
+    .back-to-top {
+        position: fixed; /* Fixed position */
+        top: 20px; /* Distance from the top */
+        right: 20px; /* Distance from the right */
+        background: linear-gradient(to bottom, #f0f0f0, #d0d0d0); /* Light gray gradient */
+        color: #000; /* Black text */
+        border: 2px solid #a0a0a0; /* Gray border */
+        padding: 5px 10px; /* Padding around the text */
+        border-radius: 5px; /* Rounded corners */
+        font-family: Tahoma, Arial, sans-serif; /* Font similar to Windows XP */
+        cursor: pointer; /* Pointer cursor on hover */
+        display: none; /* Hidden by default */
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Shadow for 3D effect */
+        text-align: center; /* Center text */
+    }
+
+        /* Hover effect */
+        .back-to-top:hover {
+            background: linear-gradient(to bottom, #d0d0d0, #f0f0f0); /* Inverted gradient on hover */
+            border-color: #808080; /* Darker border on hover */
+        }
+
+    /* Show the button when scrolling down */
+    .show {
+        display: block; /* Show the button */
+    }
+
 </style>
 <body>
+
+    <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+    <script>
+        // Show the button when scrolling down
+        window.onscroll = function () {
+            const button = document.querySelector('.back-to-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.classList.add('show'); // Show the button
+            } else {
+                button.classList.remove('show'); // Hide the button
+            }
+        };
+
+        // Scroll to the top of the document smoothly
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }</script>
+
 
     <!-- Page Container -->
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
